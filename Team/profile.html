@@ -1,0 +1,57 @@
+<style>
+    h1 {
+        font-size: 26pt;
+        text-align: center;
+    }
+
+    div {
+        width: 50vw;
+        height: 10vh;
+        font-size: 1.3vw;
+        background-color: white;
+        margin: auto;
+
+        position: relative;
+        
+        /*框线*/
+        border: 2px solid #ccc; /* 添加2像素的实线边框，颜色为灰色 */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加2像素水平偏移、2像素垂直偏移、5像素模糊半径、0.3的透明度的阴影 */
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 2vw;
+    }
+
+    select {
+        border: 12pt;
+        font-size: 1.3vw;
+    }
+
+    iframe {
+        width: 50vw;
+    }
+
+    
+</style>
+
+<body>
+    <h1>Meeting</h1>
+    <div>   
+        <span>
+            20220403 
+            <a href="https://youtu.be/N8NKW0GFhpo">[video] </a>
+            <select onchange="location = this.value;">
+                <option>PPT</option>
+                <option value="./Team/PPT/党培PPT.pdf">Renye Zhang</option>
+            </select>
+        </span>
+        
+    </div>
+</body>
