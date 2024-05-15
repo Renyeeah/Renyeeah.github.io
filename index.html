@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>Renyeeah</title> 
+</head>
+<body>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none; 
+        color: inherit; 
+        transition: color 0.5s;
+    }
+
+    a:hover {
+        color: rgba(112, 152, 201); 
+    }
+
+    #menu {
+        width:15%;
+        height:100%; 
+        margin-right: 0%;
+        background-color: rgba(112, 152, 201); 
+        float:left; 
+        position: fixed;
+
+        text-align: center;
+    }
+
+    #menu-bg {
+        width:15%;
+        height:100%; 
+        position: fixed;
+
+        background-image: url("img/menu-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+    }
+
+    #menu-content {
+        position: relative;
+        z-index: 1; /* 确保文本在上层显示 */
+        color: white; /* 更换为你想要的文本颜色 */
+        font-weight: bold;
+        text-align: center;
+        padding-top: 50px; /* 或者任何其他你想要的间距 */
+    }
+
+    #menu-img {
+        width: 50%;
+        border-radius: 100%;
+    }
+    
+    #main {
+        width: 85%;
+        height: 100vh;
+        margin-left: 15%;
+        float: left;
+        background-color: white;
+        margin-left: 15%;
+        margin-top: 8vh;
+    }
+
+    #top {
+        width: 85%;
+        height: 8vh;
+        margin-left: 15%;
+        float: left;
+        position: fixed;
+        background-color: white;
+        box-shadow: 3px 3px 5px #888888;
+        margin-bottom: 1%;
+        
+        align-content: center;
+        font-family: "楷体", "KaiTi", serif; /* 根据字体名称或系统支持的字体来指定楷体 */
+        padding-left: 1%;
+    }
+
+    #wenke {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+
+    }
+    #xuanji {
+        width: 25%;
+        height: 10vh;
+
+        text-align: center;
+        align-content: center;
+
+        box-shadow: 3px 3px 5px #888888;
+    }
+
+    .paper {
+        width: 80%;
+        height: 25vh;
+
+        margin-bottom: 2.5%;
+
+        box-shadow: 3px 3px 5px #888888;
+        transition: box-shadow 0.3s; /* 添加阴影渐变效果 */
+    }
+
+    .papper:hover {
+        box-shadow: 3px 3px 5px rgba(112, 152, 201);
+    }
+
+    #paper-img {
+        width: 20%;
+        padding: 15px;
+        float: left;
+    }
+
+    
+
+</style>
+ 
+<div style="width: 100%;">
+    <div id="menu">
+        <div id="menu-bg"></div>
+        <div id="menu-content">
+            <img id="menu-img" src="img/menu-img.jpg">
+            <p style="font-size: 16pt; margin-bottom: 25px;">Renye Zhang</p>
+            <p style="line-height: 0.5;"><a href="">短篇选集</a></p>
+            <p style="line-height: 0.5;"><a href="">长篇选集</a></p>
+            <p style="line-height: 0.5;"><a href="">散文选集</a></p>
+            <p style="line-height: 0.5; margin-bottom: 25px;"><a href="">诗歌选集</a></p>
+            <p style="line-height: 0.5;"><a href="学术论文">学术论文</a></p>
+            <p style="line-height: 0.5;"><a href="">数学建模</a></p>
+            <p style="line-height: 0.5;"><a href="">获奖经历</a></p>
+            <p style="line-height: 0.5;"><a href="">软件著作</a></p>
+        </div>
+    </div>
+    
+    <div id="top">
+        无贵无贱，无长无少，道之所存，师之所存也——韩愈《师说》
+    </div>
+
+    <div id="main">
+        <div style="text-align: center;"><h2>文科篇</h2></div>
+        <div id="wenke">
+            <!-- <div id="xuanji">短篇选集</div>
+            <div id="xuanji">长篇选集</div>
+            <div id="xuanji">散文选集</div> -->
+        </div>
+
+        <div style="text-align: center;"><h2>理科篇</h2></div>
+
+        <div style="text-align: center;"><h3>学术论文</h3></div>
+
+        <div style="display: flex;justify-content: center;">
+            <div class="paper">
+                <div><img id="paper-img" src="Res/Paper/FSCIL1.png"></div>
+                <div style="padding-top: 10px; font-size: 10pt;">
+                    <div style="margin-bottom: 4px;"><b style="font-size: 12pt;">Partitioned Memory Storage Inspired Few-Shot Class-Incremental learning</b></div>
+                    Under Review<br>
+                    <div style="margin-bottom: 4px;">
+                        <em><b style="text-decoration: underline";>Renye Zhang</b>, Yimin Yin, Peng Zhao, Jinghua Zhang</em><br>
+                    </div>
+                    <a href="./Res/Paper/FSCIL1.pdf">[paper]</a> <a>[bibtex]
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;justify-content: center;">
+            <div class="paper">
+                <div><img id="paper-img" src="Res/Paper/FVR1.png"></div>
+                <div style="padding-top: 10px; font-size: 10pt;">
+                    <div style="margin-bottom: 4px;"><b style="font-size: 12pt;">Deep Learning for Finger Vein Recognition: A Brief Survey of Recent Trend</b></div>
+                    Accepted in <em>ISICDM</em><br>
+                    <div style="margin-bottom: 4px;">
+                        <em><b style="text-decoration: underline";>Renye Zhang</b>, Yimin Yin, Wanxia Deng, Chen Li, Jinghua Zhang</em><br>
+                    </div>
+                    <a href="./Res/Paper/FVR1.pdf">[paper]</a> <a>[bibtex]
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;justify-content: center;">
+            <div class="paper">
+                <div><img id="paper-img" src="Res/Paper/FVR2.png"></div>
+                <div style="padding-top: 10px; font-size: 10pt;">
+                    <div style="margin-bottom: 4px;"><b style="font-size: 12pt;">Artificial Neural Networks for Finger Vein Recognition: A Survey</b></div>
+                    Under Review<br>
+                    <div style="margin-bottom: 4px;">
+                        <em>Yinyi Min, <b style="text-decoration: underline";>Renye Zhang</b>, Pengfei Liu, Wanxia Deng, Siliang He, Chen Li, Jinghua Zhang</em><br>
+                    </div>
+                    <a href="./Res/Paper/FVR2.pdf">[paper]</a> <a>[bibtex]
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;justify-content: center;">
+            <div class="paper">
+                <div><img id="paper-img" src="Res/Paper/Cancer.png"></div>
+                <div style="padding-top: 10px; font-size: 10pt;">
+                    <div style="margin-bottom: 4px;"><b style="font-size: 12pt;">Deep Learning-based Histopathological Image Classification of Colorectal Cancer: A Brief Survey of Recent Trends</b></div>
+                    Published in <em>Computational Intelligence and Intelligent Systems</em><br>
+                    <div style="margin-bottom: 4px;">
+                        <em>Yule Wang, Yimin Yin, <b style="text-decoration: underline";>Renye Zhang</b>, Jinghua Zhang</em><br>
+                    </div>
+                    <a href="./Res/Paper/Cancer.pdf">[paper]</a> <a>[bibtex]
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex;justify-content: center;">
+            <div class="paper">
+                <div><img id="paper-img" src="Res/Paper/Iris.png"></div>
+                <div style="padding-top: 10px; font-size: 10pt;">
+                    <div style="margin-bottom: 4px;"><b style="font-size: 12pt;">Deep learning for iris recognition: a review</b></div>
+                    Under Review<br>
+                    <div style="margin-bottom: 4px;">
+                        <em>Yinyi Min, Siliang He, <b style="text-decoration: underline";>Renye Zhang</b>, Hongli Chang, Xu Han, Jinghua Zhang</em><br>
+                    </div>
+                    <a href="./Res/Paper/Iris.pdf">[paper]</a> <a>[bibtex]
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+ 
+</body>
+</html>
