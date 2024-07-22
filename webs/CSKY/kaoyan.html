@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>Renyeeah</title> 
+</head>
+
+<body>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none; 
+        color: inherit;
+        transition: color 0.5s;
+
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: rgba(112, 152, 201); 
+    }
+
+    #menu {
+        width:15%;
+        height:100%; 
+        margin-right: 0%;
+        background-color: rgba(112, 152, 201); 
+        float:left; 
+        position: fixed;
+
+        text-align: center;
+    }
+
+    #menu-bg {
+        width:15%;
+        height:100%; 
+        position: fixed;
+
+        background-image: url("../../img/menu-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+    }
+
+    #menu-content {
+        position: relative;
+        z-index: 1; /* 确保文本在上层显示 */
+        color: white; /* 更换为你想要的文本颜色 */
+        font-weight: bold;
+        text-align: center;
+        padding-top: 50px; /* 或者任何其他你想要的间距 */
+    }
+
+    #menu-img {
+        width: 50%;
+        border-radius: 100%;
+    }
+    
+    #main {
+        width: 85%;
+        height: 100vh;
+        margin-left: 15%;
+        float: left;
+        background-color: white;
+        margin-left: 15%;
+        margin-top: 8vh;
+    }
+
+    #top {
+        width: 85%;
+        height: 8vh;
+        margin-left: 15%;
+        float: left;
+        position: fixed;
+        background-color: white;
+        box-shadow: 3px 3px 5px #888888;
+        margin-bottom: 1%;
+        
+        align-content: center;
+        font-family: "楷体", "KaiTi", serif; /* 根据字体名称或系统支持的字体来指定楷体 */
+        padding-left: 1%;
+    }
+
+
+    .subject {
+        width: 20%;
+        height: 100%;
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+        margin-right: 2.5%;
+        
+        padding-left: 20px;
+        padding-top: 1px;
+
+        float: left;
+
+    }
+
+
+
+</style>
+ 
+<div style="width: 100%;">
+    <div id="menu">
+        <div id="menu-bg"></div>
+        <div id="menu-content">
+            <img id="menu-img" src="../../img/menu-img.jpg">
+            <p style="line-height: 0.25; font-size: 16pt;">Renye Zhang</p>
+            <p style="margin-bottom: 25px;">（张任也）</p>
+            <p style="line-height: 0.5;"><a href="">短篇选集</a></p>
+            <p style="line-height: 0.5;"><a href="">长篇选集</a></p>
+            <p style="line-height: 0.5;"><a href="">散文选集</a></p>
+            <p style="line-height: 0.5; margin-bottom: 25px;"><a href="">诗歌选集</a></p>
+            <p style="line-height: 0.5;"><a href="">学术论文</a></p>
+            <p style="line-height: 0.5;"><a href="">数学建模</a></p>
+            <p style="line-height: 0.5;"><a href="">获奖经历</a></p>
+            <p style="line-height: 0.5;"><a href="">软件著作</a></p>
+            <b style="font-size: 10pt;">renyezhang2016@163.com</b>
+        </div>
+    </div>
+    
+    <div id="top">
+        无贵无贱，无长无少，道之所存，师之所存也——韩愈《师说》
+    </div>
+
+    <div id="main">
+        <div class="subject">
+            <p style="font-size: 18pt; font-weight: bold;">数据结构</p>
+            <a href="./DS/AlgorithmCodeIndex.html">经典算法代码复现</a><br>
+            <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" >经典算法可视化（美国旧金山大学DSV）</a>
+        </div>
+
+        <div class="subject">
+            <p style="font-size: 18pt; font-weight: bold;">数学</p>
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+ 
+</body>
+</html>
