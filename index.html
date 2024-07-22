@@ -61,11 +61,12 @@
     #main {
         width: 85%;
         height: 100vh;
-        margin-left: 15%;
         float: left;
         background-color: white;
-        margin-left: 15%;
+       
         margin-top: 8vh;
+
+        padding-left: 15%;
     }
 
     #top {
@@ -116,7 +117,26 @@
         padding: 15px;
         float: left;
     }
-    
+
+    .func {
+        width: 15%;
+        height: 10%;
+        box-shadow: 3px 3px 5px #888888;
+
+        text-align: center;
+        align-content: center;
+
+        border-radius: 10px;
+        border: none;
+        background-color: white;
+
+        transition:0.5s;
+    }   
+
+    .func:hover {
+        background-color: blueviolet;
+        color: white;
+    }
 
 </style>
  
@@ -157,6 +177,14 @@
         </ul>
 
         <div style="text-align: center;"><h2>理科篇</h2></div>
+
+        <div>
+            <div class="func" onclick="to('./webs/kaoyan.html')" style="float: left; margin-left: 10%;"><h3>计算机考研</h3></div>
+            <div class="func" onclick="to('./webs/kaoyan.html')" style="float: left;"><h3>Python环境</h3></div>
+            <div class="func" onclick="to('./webs/kaoyan.html')"><h3>LaTeX写作</h3></div>
+        </div>
+        
+        
 
         <div style="text-align: center;"><h3>学术论文</h3></div>
 
@@ -318,6 +346,12 @@
     </div>
 
 </div>
+
+<script>
+    function to(web) {
+        window.location.href = web;
+    }
+</script>
 
 
  
